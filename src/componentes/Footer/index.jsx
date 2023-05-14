@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import logo from "../../assets/images/logo.png"
 import { colorPrimario } from "../../UI/variablesCSS";
+import { Link } from "react-router-dom";
 
 const StyleFooter = styled.footer`
 
@@ -20,7 +21,7 @@ const Footer = () => {
 
     return (
        <StyleFooter>
-        <Logo src={logo} alt="LogoTipo" />
+              <Link to="/"><Logo src={logo} alt="Logo AluraFlix" /></Link>
        </StyleFooter> 
     )
 }

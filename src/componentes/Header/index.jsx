@@ -33,15 +33,15 @@ width: 150px;
 //   border-color: blue;
 // `;
 
-const NuevoVideo = () => {
-  console.log("Boton Pulsado")
-}
+// const NuevoVideo = () => {
+//   console.log("Boton Pulsado")
+// }
 
 export const Header = () => {
   return (
     <StyleHeader>
       <Link to="/"><Logo src={logo} alt="Logo AluraFlix" /></Link>
-      <BtnNuevoVideo onClick={NuevoVideo}>Nuevo Video</BtnNuevoVideo>
+      <Link to="nuevo-video/"> <BtnNuevoVideo>Nuevo Video</BtnNuevoVideo></Link>
     </StyleHeader>
   );
 };

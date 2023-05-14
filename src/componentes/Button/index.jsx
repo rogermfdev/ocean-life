@@ -1,5 +1,13 @@
 import styled from "styled-components";
 import {blanco} from "../../UI/variablesCSS.jsx";
+import Button from '@mui/material/Button';
+// import DeleteIcon from '@mui/icons-material/Delete';
+// import SendIcon from '@mui/icons-material/Send';
+import Stack from '@mui/material/Stack';
+
+
+
+
 
 
 const Boton =styled.button`
@@ -20,5 +28,22 @@ background: #6BD1FF;
 font-size: 1.5em;
 border: none;
 `
+
+
+// export function IconLabelButtons() {
+//     return (
+//       <Stack direction="row" spacing={2}>
+//         <Button variant="outlined" >
+//           Limpiar
+//         </Button>
+//         <Button variant="contained" >
+//           Enviar
+//         </Button>
+//       </Stack>
+//     );
+//   }
+
+
+
 
 
