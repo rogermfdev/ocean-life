@@ -16,7 +16,7 @@ const Container = styled.div`
     display: flex;
 justify-content: space-around;
 align-items: center;
-height: 100vh;
+height: 1200;
 background-image: url(${imgBanner});
 background-size: cover;
 }
@@ -36,6 +36,8 @@ const Column = styled.div`
   padding: 20px;
   margin: 20px;
   width: 45%;
+  background: none;
+
 `;
 
 const Title = styled.h1`

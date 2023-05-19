@@ -29,6 +29,9 @@ font-size: 1.5em;
 border: none;
 `
 
+export const BtnCat = styled(BtnHero)
+
+
 
 // export function IconLabelButtons() {
 //     return (

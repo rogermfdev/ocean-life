@@ -1,10 +1,9 @@
-{
-    "videos": [
+[
       {
         "titulo": "Título del video 1",
         "link": "https://www.youtube.com/watch?v=J2UK7kRNRmY",
         "thumbnail": "https://i.ytimg.com/vi/J2UK7kRNRmY/maxresdefault.jpg",
-        "categoria": "Animales",
+        "Oceano Profundo": "Animales",
         "descripcion": "Descripción del video 1"
     },
       {
@@ -39,8 +38,44 @@
         "titulo": "Título del video 6",
         "link": "https://www.youtube.com/watch?v=aZb5ddjmpno",
         "thumbnail": "https://i.ytimg.com/vi/aZb5ddjmpno/maxresdefault.jpg",
-        "categoria": "Pulpo",
+        "categoria": "Animales",
         "descripcion": "Descripción del video 6"
+    },
+      {
+        "titulo": "Título del video 7",
+        "link": "https://www.youtube.com/watch?v=qb8ulwUBRBA",
+        "thumbnail": "https://i.ytimg.com/vi/qb8ulwUBRBA/maxresdefault.jpg",
+        "categoria": "Tiburones",
+        "descripcion": "Descripción del video 7"
+    },
+      {
+        "titulo": "Título del video 8",
+        "link": "https://www.youtube.com/watch?v=wV49x5M2TKg",
+        "thumbnail": "https://i.ytimg.com/vi/wV49x5M2TKg/maxresdefault.jpg",
+        "categoria": "Tiburones",
+        "descripcion": "Descripción del video 8"
+    },
+      {
+        "titulo": "Título del video 9",
+        "link": "https://www.youtube.com/watch?v=34L1i_lmKmo",
+        "thumbnail": "https://i.ytimg.com/vi/34L1i_lmKmo/maxresdefault.jpg",
+        "categoria": "Tiburones",
+        "descripcion": "Descripción del video 8"
+    },
+      {
+        "titulo": "Título del video 10",
+        "link": "https://www.youtube.com/watch?v=Oza3DOAR2gg",
+        "thumbnail": "https://i.ytimg.com/vi/Oza3DOAR2gg/maxresdefault.jpg",
+        "categoria": "Tiburones",
+        "descripcion": "Descripción del video 8"
+    },
+      {
+        "titulo": "Título del video 11",
+        "link": "https://www.youtube.com/watch?v=IgMWsyhKr-Q",
+        "thumbnail": "https://i.ytimg.com/vi/IgMWsyhKr-Q/maxresdefault.jpg",
+        "categoria": "Tiburones",
+        "descripcion": "Descripción del video 8"
     }
-    ]  
-}
+    
+  ]
+    

@@ -1,23 +1,11 @@
+import RegistroCategoria from "../componentes/Registro/RegistroCategoria"
 import Header from "../componentes/Header"
 import Footer from "../componentes/Footer";
-import Formulario from "../componentes/Registro/RegistroVideo";
 import { Box } from "@mui/system"
 
 
+const PageCategoria = () =>{
 
-
-
-
-
-const FormPage = () => {
-
-
-    const registrarVideo = (video) => {
-        console.log("Nuevo video", video)
-        //Spread operator
-       // actualizarColaboradores([...colaboradores, colaborador])
-      }
-    
 
     return (
         <main>
@@ -31,12 +19,14 @@ const FormPage = () => {
 
         }}
         >
-        <Formulario />
+        <RegistroCategoria />
+
         </Box>
+        
             <Footer />
         </main>
     )
+
 }
 
-export default FormPage
-
+export default PageCategoria;

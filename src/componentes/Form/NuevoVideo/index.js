@@ -1,124 +1,25 @@
-import { TextField, Box, Select, InputLabel, FormControl, Button, Stack } from "@mui/material";
 
-const NuevoVideo = () => {
+const registrarVideo = (props) => {
+    
+    const { titulo, link, imagen, texto, cat } = props.datos
+    // const { colorPrimario, eliminarColaborador } = props
 
-    // const onsubmit = (e) =>{
-    //     e.preventDefault();
-    //     console.log("Enviado")
-    // }
+    // condicion ? verdadero : falso
 
-
-    const handleForm = (e) => {
-
-        e.preventDefault();
-
-        console.log("Enviado");
-
-    }
-
-    const limpiar = (e) => {
-
-        e.preventDefault();
-
-        console.log("Limpiado");
-
-    }
-
-    return (
-
-        <Box
-            component="form"
-            autocomplete="off"
-            sx={{
-                maxWidth: '100%',
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                flexDirection: "column",
-            }}
-
-            onSubmit={handleForm}
-        >
+    return console.log("video", props)
+    // <div className="colaborador">
+    //     <AiFillCloseCircle className="eliminar" onClick={() => eliminarColaborador(id)} />
+    //     <div className="encabezado" style={{ backgroundColor: colorPrimario }}>
+    //         <img src={foto} alt={nombre} />
+    //     </div>
+    //     <div className="info">
+    //         <h4>{nombre}</h4>
+    //         <h5>{puesto}</h5>
+    //         {fav ? <AiFillHeart color="red" onClick={() => like(id)} /> : <AiOutlineHeart onClick={() => like(id)} />}
 
 
-
-            <h2>Nuevo Video</h2>
-
-
-
-            <TextField
-                id="filled-basic"
-                label="Título"
-                variant="filled"
-                fullWidth
-                margin="dense"
-                type="text"
-            />
-
-            <TextField
-                id="filled-basic"
-                label="Link del video"
-                variant="filled"
-                fullWidth
-                margin="dense"
-                type="text"
-            />
-
-            <TextField
-                id="filled-basic"
-                label="Link imagen del video"
-                variant="filled"
-                fullWidth
-                margin="dense"
-                type="text"
-            />
-
-            <FormControl
-                variant="filled"
-                fullWidth
-                margin="dense">
-                <InputLabel id="demo-simple-select-filled-label">Seleecione una categoria</InputLabel>
-                <Select
-                    labelId="demo-simple-select-filled-label"
-                    id="demo-simple-select-filled"
-                    margin="dense"
-                    value={"age"}
-                    onChange={"handleChange"}
-                >
-                    {/* <MenuItem value="">
-            <em>None</em>
-          </MenuItem>
-          <MenuItem value={10}>Ten</MenuItem>
-          <MenuItem value={20}>Twenty</MenuItem>
-          <MenuItem value={30}>Thirty</MenuItem> */}
-                </Select>
-            </FormControl>
-
-
-            <TextField
-                id="filled-multiline-static"
-                label="Descripción"
-                multiline
-                margin="dense"
-                rows={4}
-                defaultValue=""
-                variant="filled"
-                fullWidth
-            />
-            <Stack direction="row" spacing={2} margin="dense">
-                <Button variant="contained" type="submit"
-                >Guardar</Button>
-                <Button variant="outlined" onClick={limpiar}
-                >Limpiar</Button>
-
-
-            </Stack >
-
-        </Box>
-
-
-
-    )
+    //     </div>
+    // </div>
 }
 
-export default NuevoVideo;
+export default registrarVideo;

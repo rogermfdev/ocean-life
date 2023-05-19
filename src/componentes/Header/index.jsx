@@ -3,6 +3,7 @@ import { colorPrimario } from "../../UI/variablesCSS.jsx";
 import logo from "../../assets/images/logo.png"
 import { BtnNuevoVideo } from "../Button"
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 
 const StyleHeader = styled.nav`
@@ -38,10 +39,13 @@ width: 150px;
 // }
 
 export const Header = () => {
+
+  const location = useLocation();
   return (
     <StyleHeader>
       <Link to="/"><Logo src={logo} alt="Logo AluraFlix" /></Link>
-      <Link to="nuevo-video/"> <BtnNuevoVideo>Nuevo Video</BtnNuevoVideo></Link>
+      {location.pathname === "/" && <Link to="/nuevo-video/"><BtnNuevoVideo>Nuevo Video</BtnNuevoVideo></Link>}
+
     </StyleHeader>
   );
 };

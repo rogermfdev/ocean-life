@@ -1,20 +1,14 @@
-// import datosIniciales from '../../datos/datos-iniciales.json';
 
+// import Categoria from "../componentes/Categoria";
 import SimpleSlider from "./Slider";
-
-
-
 
 const HomeCarrusel = () => {
 
-
-
-    return (
-
-<SimpleSlider></SimpleSlider>
+    return ( 
+    
+        <SimpleSlider/>
+    
     )
-
-
 }
 
 export default HomeCarrusel;

@@ -1,0 +1,28 @@
+[
+    {
+      "titulo": "Animales",
+      "texto": "Descubre la vida marina como nunca antes",
+      "colores": "#f40"
+    },
+    {
+      "titulo": "Oceano Profundo",
+      "texto": "Descubre el Oceano Profundo como nunca antes",
+      "colores": "#6120d8"
+    },
+    {
+      "titulo": "Tiburones",
+      "texto": "Descubre los Arrecifes de Coral como nunca antes",
+      "colores": "#d06fa9"
+    },
+    {
+      "titulo": "Arrecifes",
+      "texto": "Descubre los Arrecifes como nunca antes",
+      "colores": "#eae73a"
+    },
+    {
+      "titulo": "Plantas Marinas",
+      "texto": "Descubre las Plantas Marinas como nunca antes",
+      "colores": "#2ba67b"
+    }
+  ]
+  
