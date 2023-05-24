@@ -1,273 +1,371 @@
+// import React, { Component } from "react";
+// import Slider from "react-slick";
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
-// import Slider from "react-slick";
 // import styled from "styled-components";
-// import datosIniciales from '../../datos/datosIniciales.json';
-// import Categoria from "../../componentes/Categoria";
-// import React, {useContext} from "react";
-// import { CatContexto } from "../../Context";
-// // import miniaturaProvisional from "../../assets/images/imgClip.jpg"
+// import db from '../../db.json';
+
+// const Section = styled.main`
+//         margin: 30px;
+//     `
+// const Carrusel = styled.div`
+//         margin-bottom: 30px;
+//     `
+// const H2 = styled.h2`
+// display: flex;
+// font-size: 1.5em;
+// padding: 5px 10px;
+// text-align: left;
+// width: 15 %;
+// color: #fff;
+// `    
+
+// const Texto = styled.p`
+// display: absolute;
+// margin-left: 10px;
+// color: #000;
+// `
+
+// const Flex = styled.div`
+// display: flex;
+// align-items: center;
+// ` 
+
+// const StyleImg = styled.div`
+// border: 3px;
+// padding: 5px;
+// `
+// const Img = styled.img`
+// width: 100%;
+// `
+
 
 // const SimpleSlider = () => {
 
+
 //     const settings = {
-//             dots: true,
-//             infinite: true,
-//             speed: 500,
+//       dots: true,
+//       infinite: true,
+//       speed: 500,
+//       slidesToShow: 4,
+//       slidesToScroll: 4,
+//       initialSlide: 0,
+//       responsive: [
+//         {
+//           breakpoint: 1024,
+//           settings: {
 //             slidesToShow: 3,
 //             slidesToScroll: 3,
-//         responsive: [
-//             {
-//                 breakpoint: 1024,
-//                 settings: {
-//                     slidesToShow: 3,
-//                     slidesToScroll: 3,
-//                     infinite: true,
-//                     dots: true
-//                 }
-//             },
-//             {
-//                 breakpoint: 600,
-//                 settings: {
-//                     slidesToShow: 2,
-//                     slidesToScroll: 2,
-//                     initialSlide: 2
-//                 }
-//             },
-//             {
-//                 breakpoint: 480,
-//                 settings: {
-//                     slidesToShow: 1,
-//                     slidesToScroll: 1
-//                 }
-//             }
-//         ]
+//             infinite: true,
+//             dots: true
+//           }
+//         },
+//         {
+//           breakpoint: 600,
+//           settings: {
+//             slidesToShow: 2,
+//             slidesToScroll: 2,
+//             initialSlide: 2
+//           }
+//         },
+//         {
+//           breakpoint: 480,
+//           settings: {
+//             slidesToShow: 1,
+//             slidesToScroll: 1
+//           }
+//         }
+//       ]
 //     };
 
-
-
-// const Box = styled.div`
-//     background: lightgreen; 
-//     height:300px;
-//     margin-right: 20px;
-//     margin: 10px;
-//   padding: 2%;
-//   display: flex;
-//    position: absolute;
-//   text-align: center;`
-
-
-//     //     const Htres = styled.h3`
-//     // // text-align: center; 
-//     // // background: #5f9ea0;
-//     // //     color: #fff;
-//     // //     font-size: 36px;
-//     // //     line-height: 100px;
-//     // //     margin: 10px;
-//     // //     padding: 2%;
-//     // //     position: relative;
-//     // //     text-align: center;`
-
-//     const Miniatura = styled.img`
-//     width: 100%;
-//     `
-// const Carrusel = styled.div`
-//     background: #000;
-//     color:  #fff;
-// `
-// const categorias = useContext(CatContexto);
-
-
 //     return (
-    
+//         <Section>
+//           {db.categorias.map((categoria, index) => (
+//             <Carrusel key={index}>
+//             <Flex>
+//               <H2 style={{ background: categoria.colores }}>{categoria.nombre}</H2>
+//               <Texto>{categoria.texto}</Texto>
+//               </Flex>
+//               <Slider {...settings}>
+//                 {db.videos
+//                   .filter((video) => video.categoria === categoria.nombre)
+//                   .map((video, index) => (
+//                    <StyleImg key={index} borderColor={categoria.colores}
+//                    > 
+//                         <Img
+//                         src={video.thumbnail}
+//                         alt={video.titulo}
+                        
+//                         />
+//                     </StyleImg>
+//                   ))}
+//               </Slider>
+//             </Carrusel>
+//           ))}
+//         </Section>
+//       );
+      
+//   }
 
-// //    <Carrusel>
-// //          {categorias.map((categoria, index) => (
-// //                 <div key={index}>
-// //                     <h2 style={{ background: categoria.colores }}>{categoria.titulo}</h2>
-// //                     <p> {categoria.texto}</p>
-// //                 </div>)   )} 
-// //         <Slider {...settings}>
-// //             {datosIniciales.map((video, index) => (
-
-// //                         if (video.categoria === categoria.titulo) {
-// //                             return (
-// //                                 <Miniatura  datos={video} src={video.thumbnail} alt="Documental" key={video.index} />
-
-// //                             );
-// //                         }
-// //                         return null;
-// //             ))}
-// //         </Slider>
-// //         </Carrusel>
-
-
-
-// <Carrusel>
-//   {categorias.map((categoria, index) => (
-//     <div key={index}>
-//       <h2 style={{ background: categoria.colores }}>{categoria.titulo}</h2>
-//       <p>{categoria.texto}</p>
-//       <Slider {...settings}>
-//         {datosIniciales.map((video, index) => {
-//           if (video.categoria === categoria.titulo) {
-//             return (
-//               <Miniatura
-//                 datos={video}
-//                 src={video.thumbnail}
-//                 alt="Documental"
-//                 key={video.index}
-//               />
-//             );
-//           }
-//           return null;
-//         })}
-//       </Slider>
-//     </div>
-//   ))}
-// </Carrusel>
-
-
-        
-// //    <Carrusel>
-// //          {categorias.map((categoria, index) => (
-// //                 <div key={index}>
-// //                     <h2 style={{ background: categoria.colores }}>{categoria.titulo}</h2>
-// //                     <p> {categoria.texto}</p>
-// //                 </div>)   )} 
-// //         <Slider {...settings}>
-// //             {datosIniciales.map((video, index) => (
-// //                 <Miniatura  datos={video} src={video.thumbnail} alt="Documental" key={video.index} />
-// //             ))}
-// //         </Slider>
-// //         </Carrusel>
-
-
-//     );
-// // }
-
-//                 // return (
-//                 // <Carrusel>
-//                 // <Slider {...settings}>
-//                 //     {/* <Categoria/>                     */}
-                    
-//                 // </Slider>
-//                 // </Carrusel>
-
-//                 // );
-
-
-//                 }
-
-            
 // export default SimpleSlider;
 
 
-/// CHAT GTP
+
+//CHAT GTP:
 
 
-
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styled from "styled-components";
-import datosIniciales from '../../datos/datosIniciales.json';
-import categorias from "../../datos/categorias.json"
+import { buscar } from "../../api/api"
+import { Link } from "react-router-dom";
+import { BtnCat } from "../../componentes/Button";
 
 
 const Section = styled.main`
-        color:  #fff;
-        margin: 30px;
-    `
+  margin: 30px;
+`
+
 const Carrusel = styled.div`
-        margin-bottom: 30px;
-    `
+  margin-bottom: 30px;
+`
+
 const H2 = styled.h2`
-display: flex;
-font-size: 1.5em;
-padding: 5px 10px;
-text-align: left;
-width: 15 %;
-`    
+  display: flex;
+  font-size: 1.5em;
+  padding: 5px 10px;
+  text-align: left;
+  width: 15%;
+  color: #fff;
+`
 
 const Texto = styled.p`
-display: absolute;
-margin-left: 10px;
-color: #000;
+  display: absolute;
+  margin-left: 10px;
+  color: #000;
 `
 
 const Flex = styled.div`
-display: flex;
-align-items: center;   
+  display: flex;
+  align-items: center;
+`
+
+const StyleImg = styled.div`
+padding: 5px; 
+`
+
+
+const Img = styled.img`
+  width: 100%;
+  border: 3px solid ${props => props.borderColor};
 `
 
 const SimpleSlider = () => {
+    const [categorias, setCategorias] = useState([]);
+    const [videos, setVideos] = useState([]);
+
+
+    useEffect(() => {
+        buscar("/categorias", setCategorias);
+        buscar("/videos", setVideos);
+      }, []);
+
+  
+  
+    if (categorias.length === 0 || videos.length === 0) {
+      return null; // Puedes mostrar un componente de carga mientras se obtienen los datos
+    }
 
 
     const settings = {
-      dots: true,
-      infinite: false,
-      speed: 500,
-      slidesToShow: 4,
-      slidesToScroll: 4,
-      initialSlide: 0,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: true
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            initialSlide: 2
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-      ]
-    };
-
+              dots: true,
+              infinite: true,
+              speed: 500,
+              slidesToShow: 4,
+              slidesToScroll: 1,
+              initialSlide: 1,
+              responsive: [
+                {
+                  breakpoint: 1024,
+                  settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                  }
+                },
+                {
+                  breakpoint: 600,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    initialSlide: 2
+                  }
+                },
+                {
+                  breakpoint: 480,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                  }
+                }
+              ]
+            };
+  
     return (
-        <Section>
-          {categorias.map((categoria, index) => (
-            <Carrusel key={index}>
-            <Flex>
-              <H2 style={{ background: categoria.colores }}>{categoria.titulo}</H2>
-              <Texto>{categoria.texto}</Texto>
-              </Flex>
-              <Slider {...settings}>
-                {datosIniciales
-                  .filter((video) => video.categoria === categoria.titulo)
-                  .map((video, index) => (
-                    <img
-                      datos={video}
-                      src={video.thumbnail}
-                      alt="Documental"
-                      key={index}
-                    />
-                  ))}
-              </Slider>
-            </Carrusel>
-          ))}
-        </Section>
-      );
-      
-  }
+      <Section>
+        {categorias.map((categoria, index) => (
 
-export default SimpleSlider;
+            
+          <Carrusel key={index}>
+            <Flex>    
+         <Link to={`/categorias/${categoria.id}`}>
+            <BtnCat style={{ background: categoria.colores }}><h3>{categoria.nombre}</h3></BtnCat>
+        </Link>  
+              <Texto>{categoria.texto}</Texto>
+            </Flex>
+            <Slider {...settings}>
+              {videos
+                .filter((video) => video.categoria === categoria.nombre)
+                .map((video, index) => (
+                  <StyleImg key={index} >
+                        <Link to={`/videos/${video.id}`} >
+                             <Img src={video.thumbnail} alt={video.titulo} borderColor={categoria.colores}/>
+                        </Link>
+                  </StyleImg>
+                ))}
+            </Slider>
+          </Carrusel>
+        ))}
+      </Section>
+    );
+  };
+  
+  export default SimpleSlider;
+
+
+
+
+///
+
+
+
+
+
+//ORIGINAL
+
+// import React, { Component } from "react";
+// import Slider from "react-slick";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
+// import styled from "styled-components";
+// import db from '../../db.json';
+
+// const Section = styled.main`
+//         margin: 30px;
+//     `
+// const Carrusel = styled.div`
+//         margin-bottom: 30px;
+//     `
+// const H2 = styled.h2`
+// display: flex;
+// font-size: 1.5em;
+// padding: 5px 10px;
+// text-align: left;
+// width: 15 %;
+// color: #fff;
+// `    
+
+// const Texto = styled.p`
+// display: absolute;
+// margin-left: 10px;
+// color: #000;
+// `
+
+// const Flex = styled.div`
+// display: flex;
+// align-items: center;
+// ` 
+
+// const StyleImg = styled.div`
+// border: 3px;
+// padding: 5px;
+// `
+// const Img = styled.img`
+// width: 100%;
+// `
+
+
+// const SimpleSlider = () => {
+
+
+//     const settings = {
+//       dots: true,
+//       infinite: true,
+//       speed: 500,
+//       slidesToShow: 4,
+//       slidesToScroll: 4,
+//       initialSlide: 0,
+//       responsive: [
+//         {
+//           breakpoint: 1024,
+//           settings: {
+//             slidesToShow: 3,
+//             slidesToScroll: 3,
+//             infinite: true,
+//             dots: true
+//           }
+//         },
+//         {
+//           breakpoint: 600,
+//           settings: {
+//             slidesToShow: 2,
+//             slidesToScroll: 2,
+//             initialSlide: 2
+//           }
+//         },
+//         {
+//           breakpoint: 480,
+//           settings: {
+//             slidesToShow: 1,
+//             slidesToScroll: 1
+//           }
+//         }
+//       ]
+//     };
+
+//     return (
+//         <Section>
+//           {db.categorias.map((categoria, index) => (
+//             <Carrusel key={index}>
+//             <Flex>
+//               <H2 style={{ background: categoria.colores }}>{categoria.titulo}</H2>
+//               <Texto>{categoria.texto}</Texto>
+//               </Flex>
+//               <Slider {...settings}>
+//                 {db.videos
+//                   .filter((video) => video.categoria === categoria.titulo)
+//                   .map((video, index) => (
+//                    <StyleImg key={index} borderColor={categoria.colores}
+//                    > 
+//                         <Img
+//                         src={video.thumbnail}
+//                         alt={video.titulo}
+                        
+//                         />
+//                     </StyleImg>
+//                   ))}
+//               </Slider>
+//             </Carrusel>
+//           ))}
+//         </Section>
+//       );
+      
+//   }
+
+// export default SimpleSlider;
 
 
 

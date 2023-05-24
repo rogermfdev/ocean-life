@@ -10,10 +10,11 @@ import Stack from '@mui/material/Stack';
 
 
 
-const Boton =styled.button`
+export const Boton = styled.button`
     margin: 1em;
     padding: 0.25em 1em;
     border-radius: 4px;
+    cursor: pointer;
 `
 
 export const BtnNuevoVideo = styled(Boton)`
@@ -29,7 +30,10 @@ font-size: 1.5em;
 border: none;
 `
 
-export const BtnCat = styled(BtnHero)
+export const BtnCat = styled(BtnHero)`
+    font-size: 1.2em;
+`
+
 
 
 

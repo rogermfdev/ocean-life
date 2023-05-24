@@ -1,29 +1,33 @@
 import RegistroCategoria from "../componentes/Registro/RegistroCategoria"
-import Header from "../componentes/Header"
-import Footer from "../componentes/Footer";
 import { Box } from "@mui/system"
+import TablaCategoria from "../componentes/TablaCategoria";
+import { useState } from "react";
 
 
-const PageCategoria = () =>{
 
+const PageCategoria = () => {
+
+    const [tablaActualizada, setTablaActualizada] = useState(false);
+
+    
+
+    const handleActualizarTabla = () => {
+        setTablaActualizada(!tablaActualizada);
+      };
 
     return (
         <main>
-            <Header />
-
             <Box
-        sx={{
-        width: "900px",
-        padding: "40px",
-        margin:"0 auto",
+                sx={{
+                    width: "900px",
+                    padding: "40px",
+                    margin: "30px auto",
+                }}
+            >
+                <RegistroCategoria  handleActualizarTabla={handleActualizarTabla} />
+                <TablaCategoria tablaActualizada={tablaActualizada} setTablaActualizada={setTablaActualizada} />
+            </Box>
 
-        }}
-        >
-        <RegistroCategoria />
-
-        </Box>
-        
-            <Footer />
         </main>
     )
 

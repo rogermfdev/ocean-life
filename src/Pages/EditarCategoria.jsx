@@ -1,12 +1,12 @@
-import Formulario from "../componentes/Registro/RegistroVideo";
 import { Box } from "@mui/system"
+import ActualizandoCategoria from "../componentes/Registro/RegistroCategoria/ActualizandoCategoria.jsx"
 
-const FormPage = () => {
+
+const EditarCategoriaPage = () => {
+
 
     return (
         <main>
-
-
             <Box
                 sx={{
                     width: "900px",
@@ -16,12 +16,13 @@ const FormPage = () => {
 
                 }}
             >
-                <Formulario />
+                <ActualizandoCategoria />
+
             </Box>
 
         </main>
     )
+
 }
 
-export default FormPage
-
+export default EditarCategoriaPage;

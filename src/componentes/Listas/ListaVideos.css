@@ -1,0 +1,37 @@
+.Section {
+    margin: 30px;
+  }
+  
+  .Carrusel {
+    margin-bottom: 30px;
+  }
+  
+  .H2 {
+    display: flex;
+    font-size: 1.5em;
+    padding: 5px 10px;
+    text-align: left;
+    width: 15%;
+    color: #fff;
+  }
+  
+  .Texto {
+    display: absolute;
+    margin-left: 10px;
+    color: #000;
+  }
+  
+  .Flex {
+    display: flex;
+    align-items: center;
+  }
+  
+  .StyleImg {
+    border: 3px;
+    padding: 5px;
+  }
+  
+  .Img {
+    width: 100%;
+  }
+  

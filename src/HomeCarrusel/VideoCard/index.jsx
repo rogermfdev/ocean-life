@@ -1,55 +1,62 @@
-import styled from "styled-components";
+import React, { useEffect, useState } from 'react';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import { useParams } from 'react-router-dom';
+import { buscar } from '../../api/api';
 
 
 
-const Card = styled.div`
-    background-size: cover; /* La imagen se ajusta al tamaño del contenedor cubriendo toda el área posible */
-  background-repeat: no-repeat; /* Se evita que la imagen se repita en el contenedor */
-  background-position: center; /* Se centra la imagen en el contenedor */
-`
+const VideoPost = ({url}) => {
+
+    const [video, setVideo] = useState({});
+
+    const {id} = useParams();
+
+    useEffect(() => {
+        buscar(`/videos/${id}`, setVideo);
+    }, [id]);
 
 
 
-// const obtenerId = ($url) => {
-//     const partes = $url.split("v="); // Divide la URL por la cadena "v="
-//     // const partes = $url.split("/"); // Divide la URL por la cadena "v="
-//     console.log("ID: ", partes [1]);
-//     return(partes[1]);
-//   }
-
-// const videID = obtenerId("https://www.youtube.com/watch?v=J2UK7kRNRmY");
-// const videID2 = obtenerId("https://www.youtube.com/watch?v=szg3dIZ8xDc");
-// const videID3 = obtenerId("https://www.youtube.com/watch?v=r9PeYPHdpNo");
-// const videID4 = obtenerId("https://www.youtube.com/watch?v=9FqwhW0B3tY");
-// const videID5 = obtenerId("https://www.youtube.com/watch?v=gv4H30L1nXA");
-
-
-
-// const titulosVideos = datosIniciales.videos.map(video => video.id);
-// console.log(titulosVideos); // ['Título del video 1', 'Título del video 2', 'Título del video 3']
-
-
-
-
-// const VideoCard = () => {
-
-
-//     return (
-//         <Card>
-//             {datosIniciales.videos.map((video) => video.id;
-//             <Miniatura src={`https://i.ytimg.com/vi/${videID}/maxresdefault.jpg`} alt="Documental" key={index}/>
-//             )}
-//         </Card>)
-// }
-
-// export default VideoCard;
-
-
-const VideoCard = () => {
     return (
-        <Card />
+        <section>
+            <div>
+                <h1>{video.titulo}</h1>
+            </div>
+        </section>
+
+
+
+
+
+
+    //     <Card sx={{ maxWidth: 345 }}>
+    //     <CardMedia
+    //       sx={{ height: 140 }}
+    //         image={video.thumbnail}
+    //       title="green iguana"
+    //     >
+    //       {video.link}  
+    //     </CardMedia>
+    //     <CardContent>
+    //       <Typography gutterBottom variant="h5" component="div">
+    //         {video.id}
+    //       </Typography>
+    //       <Typography variant="body2" color="text.secondary">
+    //       {video.descripcion}
+    //       </Typography>
+    //     </CardContent>
+        
+    //     <CardActions>
+    //       <Button size="small">Compartir</Button>
+    //     </CardActions>
+    //   </Card>
             
     );
 }
 
-export default VideoCard;
+export default VideoPost;

@@ -1,47 +1,55 @@
-[
+{
+  "videos": [
       {
+        "id": 1,
         "titulo": "Título del video 1",
         "link": "https://www.youtube.com/watch?v=J2UK7kRNRmY",
         "thumbnail": "https://i.ytimg.com/vi/J2UK7kRNRmY/maxresdefault.jpg",
-        "Oceano Profundo": "Animales",
+        "Oceano Profundo": "Extrañas Criaturas",
         "descripcion": "Descripción del video 1"
     },
       {
+        "id": 2,
         "titulo": "Título del video 2",
         "link": "https://www.youtube.com/watch?v=szg3dIZ8xDc",
         "thumbnail": "https://i.ytimg.com/vi/szg3dIZ8xDc/maxresdefault.jpg",
-        "categoria": "Animales",
+        "categoria": "Extrañas Criaturas",
         "descripcion": "Descripción del video 2"
     },
       {
+        "id": 3,
         "titulo": "Título del video 3",
         "link": "https://www.youtube.com/watch?v=r9PeYPHdpNo",
         "thumbnail": "https://i.ytimg.com/vi/r9PeYPHdpNo/maxresdefault.jpg",
-        "categoria": "Animales",
+        "categoria": "Extrañas Criaturas",
         "descripcion": "Descripción del video 3"
     },
       {
+        "id": 4,
         "titulo": "Título del video 4",
         "link": "https://www.youtube.com/watch?v=9FqwhW0B3tY",
         "thumbnail": "https://i.ytimg.com/vi/9FqwhW0B3tY/maxresdefault.jpg",
-        "categoria": "Animales",
+        "categoria": "Extrañas Criaturas",
         "descripcion": "Descripción del video 4"
     },
       {
+        "id": 5,
         "titulo": "Título del video 5",
         "link": "https://www.youtube.com/watch?v=FmR14Yng9kI",
         "thumbnail": "https://i.ytimg.com/vi/FmR14Yng9kI/maxresdefault.jpg",
-        "categoria": "Animales",
+        "categoria": "Extrañas Criaturas",
         "descripcion": "Descripción del video 5"
     },
       {
+        "id": 6,
         "titulo": "Título del video 6",
         "link": "https://www.youtube.com/watch?v=aZb5ddjmpno",
         "thumbnail": "https://i.ytimg.com/vi/aZb5ddjmpno/maxresdefault.jpg",
-        "categoria": "Animales",
+        "categoria": "Extrañas Criaturas",
         "descripcion": "Descripción del video 6"
     },
       {
+        "id": 7,
         "titulo": "Título del video 7",
         "link": "https://www.youtube.com/watch?v=qb8ulwUBRBA",
         "thumbnail": "https://i.ytimg.com/vi/qb8ulwUBRBA/maxresdefault.jpg",
@@ -49,6 +57,7 @@
         "descripcion": "Descripción del video 7"
     },
       {
+        "id": 8,
         "titulo": "Título del video 8",
         "link": "https://www.youtube.com/watch?v=wV49x5M2TKg",
         "thumbnail": "https://i.ytimg.com/vi/wV49x5M2TKg/maxresdefault.jpg",
@@ -56,6 +65,7 @@
         "descripcion": "Descripción del video 8"
     },
       {
+        "id": 9,
         "titulo": "Título del video 9",
         "link": "https://www.youtube.com/watch?v=34L1i_lmKmo",
         "thumbnail": "https://i.ytimg.com/vi/34L1i_lmKmo/maxresdefault.jpg",
@@ -63,6 +73,7 @@
         "descripcion": "Descripción del video 8"
     },
       {
+        "id": 10,
         "titulo": "Título del video 10",
         "link": "https://www.youtube.com/watch?v=Oza3DOAR2gg",
         "thumbnail": "https://i.ytimg.com/vi/Oza3DOAR2gg/maxresdefault.jpg",
@@ -70,12 +81,46 @@
         "descripcion": "Descripción del video 8"
     },
       {
+        "id": 11,
         "titulo": "Título del video 11",
         "link": "https://www.youtube.com/watch?v=IgMWsyhKr-Q",
         "thumbnail": "https://i.ytimg.com/vi/IgMWsyhKr-Q/maxresdefault.jpg",
         "categoria": "Tiburones",
         "descripcion": "Descripción del video 8"
+      }
+    ],
+
+    "categorias": [
+    {
+      "id": 1,
+      "texto": "Descubre la vida marina como nunca antes",
+      "nombre": "Extrañas Criaturas",
+      "colores": "#ff4400"
+    },
+    { 
+      "id": 2,
+      "texto": "Descubre el Oceano Profundo como nunca antes",
+      "nombre": "Oceano Profundo",
+      "colores": "#6120d8"
+    },
+    {
+      "id": 3,
+      "texto": "Descubre los Arrecifes de Coral como nunca antes",
+      "nombre": "Tiburones",
+      "colores": "#d06fa9"
+    },
+    {
+      "id": 4,
+      "nombre": "Arrecifes",
+      "texto": "Descubre los Arrecifes como nunca antes",
+      "colores": "#eae73a"
+    },
+    {
+      "id": 5,
+      "nombre": "Plantas Marinas",
+      "texto": "Descubre las Plantas Marinas como nunca antes",
+      "colores": "#2ba67b"
     }
     
   ]
-    
+}

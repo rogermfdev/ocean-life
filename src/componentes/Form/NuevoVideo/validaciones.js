@@ -41,6 +41,15 @@ export const validarText= (input) => {
     }
 }
 
+export const validarPass = (input) =>{
+    if (input === "1234") {
+        return true;
+    } 
+    else {
+        return false;
+    }
+}
+
 
 
 // export const validarLink = (link) => {

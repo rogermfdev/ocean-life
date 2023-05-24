@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import React, { createContext } from "react";
 // import { listarVideos } from "./services/videos.services";
 // import { listarCategorias } from "./services/categorias.services";
 

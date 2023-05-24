@@ -2,10 +2,11 @@ import Header from "../componentes/Header"
 import HomeCarrusel from "../HomeCarrusel";
 import Banner from "../componentes/Container/HeroPage";
 import Footer from "../componentes/Footer";
-import Categoria from "../componentes/Categoria";
-import React, { useContext, useState } from 'react';
+// import Categoria from "../componentes/Categoria";
+import React from 'react';
 // import { CatContexto } from "../Context";
-import CatContextoProvider from "../Context"
+// import CatContextoProvider from "../Context"
+import ListaVideos from "../componentes/Listas/ListaVideos";
 
 
 
@@ -50,11 +51,13 @@ const Home = () => {
     return (
         <main>
 
-                <Header />
+              
                 <Banner />
                 <HomeCarrusel />
                 {/* <Categoria/> */}
-            <Footer />
+                {/* <ListaVideos url={"/videos"} /> */}
+
+       
         </main>
     )
 

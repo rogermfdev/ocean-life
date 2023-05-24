@@ -1,0 +1,246 @@
+{
+  "videos": [
+    {
+      "id": 1,
+      "titulo": "Título del video 1",
+      "link": "https://www.youtube.com/watch?v=J2UK7kRNRmY",
+      "thumbnail": "https://i.ytimg.com/vi/J2UK7kRNRmY/maxresdefault.jpg",
+      "categoria": "Extrañas Criaturas",
+      "descripcion": "Descripción del video 1"
+    },
+    {
+      "id": 3,
+      "titulo": "Título del video 3",
+      "link": "https://www.youtube.com/watch?v=r9PeYPHdpNo",
+      "thumbnail": "https://i.ytimg.com/vi/r9PeYPHdpNo/maxresdefault.jpg",
+      "categoria": "Extrañas Criaturas",
+      "descripcion": "Descripción del video 3"
+    },
+    {
+      "id": 4,
+      "titulo": "Título del video 4",
+      "link": "https://www.youtube.com/watch?v=9FqwhW0B3tY",
+      "thumbnail": "https://i.ytimg.com/vi/9FqwhW0B3tY/maxresdefault.jpg",
+      "categoria": "Extrañas Criaturas",
+      "descripcion": "Descripción del video 4"
+    },
+    {
+      "id": 5,
+      "titulo": "Título del video 5",
+      "link": "https://www.youtube.com/watch?v=FmR14Yng9kI",
+      "thumbnail": "https://i.ytimg.com/vi/FmR14Yng9kI/maxresdefault.jpg",
+      "categoria": "Extrañas Criaturas",
+      "descripcion": "Descripción del video 5"
+    },
+    {
+      "id": 6,
+      "titulo": "Título del video 6",
+      "link": "https://www.youtube.com/watch?v=aZb5ddjmpno",
+      "thumbnail": "https://i.ytimg.com/vi/aZb5ddjmpno/maxresdefault.jpg",
+      "categoria": "Extrañas Criaturas",
+      "descripcion": "Descripción del video 6"
+    },
+    {
+      "id": 7,
+      "titulo": "Título del video 7",
+      "link": "https://www.youtube.com/watch?v=qb8ulwUBRBA",
+      "thumbnail": "https://i.ytimg.com/vi/qb8ulwUBRBA/maxresdefault.jpg",
+      "categoria": "Tiburones",
+      "descripcion": "Descripción del video 7"
+    },
+    {
+      "id": 8,
+      "titulo": "Título del video 8",
+      "link": "https://www.youtube.com/watch?v=wV49x5M2TKg",
+      "thumbnail": "https://i.ytimg.com/vi/wV49x5M2TKg/maxresdefault.jpg",
+      "categoria": "Tiburones",
+      "descripcion": "Descripción del video 8"
+    },
+    {
+      "id": 9,
+      "titulo": "Título del video 9",
+      "link": "https://www.youtube.com/watch?v=34L1i_lmKmo",
+      "thumbnail": "https://i.ytimg.com/vi/34L1i_lmKmo/maxresdefault.jpg",
+      "categoria": "Tiburones",
+      "descripcion": "Descripción del video 8"
+    },
+    {
+      "id": 10,
+      "titulo": "Título del video 10",
+      "link": "https://www.youtube.com/watch?v=Oza3DOAR2gg",
+      "thumbnail": "https://i.ytimg.com/vi/Oza3DOAR2gg/maxresdefault.jpg",
+      "categoria": "Tiburones",
+      "descripcion": "Descripción del video 8"
+    },
+    {
+      "id": 11,
+      "titulo": "Título del video 11",
+      "link": "https://www.youtube.com/watch?v=IgMWsyhKr-Q",
+      "thumbnail": "https://i.ytimg.com/vi/IgMWsyhKr-Q/maxresdefault.jpg",
+      "categoria": "Tiburones",
+      "descripcion": "Descripción del video 8"
+    },
+    {
+      "id": 12,
+      "titulo": "Extrañas criaturas marinas",
+      "link": "https://www.youtube.com/watch?v=Gvzk_8emU04",
+      "thumbnail": "https://i.ytimg.com/vi/Gvzk_8emU04/maxresdefault.jpg",
+      "categoria": "Animales",
+      "descripcion": "Extrañas criaturas marinas en lugares increíbles."
+    },
+    {
+      "id": 13,
+      "titulo": "Vida más Allá: Viaje de Extrema Profundidad a los \"Extraterrestres\" del Abismo | DOCUMENTAL",
+      "link": "https://youtu.be/Azp6dnU1_OA",
+      "thumbnail": "https://i.ytimg.com/vi/Azp6dnU1_OA/maxresdefault.jpg",
+      "categoria": "Extrañas Criaturas",
+      "descripcion": "El océano es una de las joyas más bellas de la naturaleza. Alberga una fauna y una flora increíblemente ricas y hermosas. \nDesde el principio de la historia de la humanidad, el hombre ha estado estrechamente vinculado al mar y fascinado por esta inmensidad azul. Las profundidades del mar son aún más codiciadas y fascinantes porque siguen siendo un misterio a pesar de todos los inventos técnicos de los que somos capaces. "
+    },
+    {
+      "id": 14,
+      "titulo": "Ballenas Underwater World 4K",
+      "link": "https://www.youtube.com/watch?v=J2UK7kRNRmY",
+      "thumbnail": "https://i.ytimg.com/vi/J2UK7kRNRmY/maxresdefault.jpg",
+      "categoria": "Ballenas",
+      "descripcion": "Disfruta de las ballenas."
+    },
+    {
+      "id": 15,
+      "titulo": "Arrecifes de coral",
+      "link": "https://www.youtube.com/watch?v=kc_W9gz0KTI",
+      "thumbnail": "https://i.ytimg.com/vi/kc_W9gz0KTI/sddefault.jpg",
+      "categoria": "Arrecifes",
+      "descripcion": "Arrecifes de coral"
+    },
+    {
+      "id": 16,
+      "titulo": "Arrecifes de Coral",
+      "link": "https://www.youtube.com/watch?v=kc_W9gz0KTI",
+      "thumbnail": "Arrecifes de coral",
+      "categoria": "Oceano Profundo",
+      "descripcion": "Arrecifes de Coral"
+    },
+    {
+      "id": 17,
+      "titulo": "Arrecifes de Coral",
+      "link": "https://www.youtube.com/watch?v=kc_W9gz0KTI",
+      "thumbnail": "https://i.ytimg.com/vi/kc_W9gz0KTI/sddefault.jpg",
+      "categoria": "Oceano Profundo",
+      "descripcion": "Arrecifes de Coral"
+    },
+    {
+      "id": 18,
+      "titulo": "Pulpos increíbles BBC",
+      "link": "https://www.youtube.com/watch?v=ebeNeQFUMa0",
+      "thumbnail": "https://i.ytimg.com/vi/ebeNeQFUMa0/maxresdefault.jpg",
+      "categoria": "Pulpos",
+      "descripcion": "Pulpos increíbles BBC"
+    },
+    {
+      "id": 19,
+      "titulo": "Pulpo curioso documental",
+      "link": "https://www.youtube.com/watch?v=abRPaXgJGQg",
+      "thumbnail": "https://i.ytimg.com/vi/abRPaXgJGQg/maxresdefault.jpg",
+      "categoria": "Pulpos",
+      "descripcion": "Pulpo curioso documental"
+    },
+    {
+      "id": 21,
+      "titulo": "Pulpos documentales",
+      "link": "https://www.youtube.com/watch?v=abRPaXgJGQg",
+      "thumbnail": "https://i.ytimg.com/vi/abRPaXgJGQg/maxresdefault.jpg",
+      "categoria": "Pulpos",
+      "descripcion": "Pulpos documentales"
+    },
+    {
+      "id": 22,
+      "titulo": "Pulpos documentales",
+      "link": "https://www.youtube.com/watch?v=abRPaXgJGQg",
+      "thumbnail": "https://i.ytimg.com/vi/abRPaXgJGQg/maxresdefault.jpg",
+      "categoria": "Pulpos",
+      "descripcion": "Pulpos documentales"
+    },
+    {
+      "id": 23,
+      "titulo": "Pulpos documentales",
+      "link": "https://www.youtube.com/watch?v=abRPaXgJGQg",
+      "thumbnail": "https://i.ytimg.com/vi/abRPaXgJGQg/maxresdefault.jpg",
+      "categoria": "Pulpos",
+      "descripcion": "Pulpos documentales"
+    },
+    {
+      "id": 24,
+      "titulo": "Pulpos documentales",
+      "link": "https://www.youtube.com/watch?v=abRPaXgJGQg",
+      "thumbnail": "https://i.ytimg.com/vi/abRPaXgJGQg/maxresdefault.jpg",
+      "categoria": "Pulpos",
+      "descripcion": "Pulpos documentales"
+    },
+    {
+      "id": 25,
+      "titulo": "Ballena Azul Mini Documental",
+      "link": "https://www.youtube.com/watch?v=vkJNtpjgJDg",
+      "thumbnail": "https://i.ytimg.com/vi/vkJNtpjgJDg/maxresdefault.jpg",
+      "categoria": "Ballenas",
+      "descripcion": "Ballena Azul Mini Documental"
+    },
+    {
+      "id": 26,
+      "titulo": "¿Los cetáceos y los humanos hablan el mismo lenguaje? | DW Documental",
+      "link": "https://www.youtube.com/watch?v=smzMaAVhIQw",
+      "thumbnail": "https://i.ytimg.com/vi/smzMaAVhIQw/maxresdefault.jpg",
+      "categoria": "Ballenas",
+      "descripcion": "¿Los cetáceos y los humanos hablan el mismo lenguaje? | DW Documental"
+    },
+    {
+      "id": 27,
+      "titulo": "Los Secretos de las Ballenas | Damos un respiro a la naturaleza",
+      "link": "https://www.youtube.com/watch?v=8hMykNyQTHA",
+      "thumbnail": "https://i.ytimg.com/vi/8hMykNyQTHA/maxresdefault.jpg",
+      "categoria": "Ballenas",
+      "descripcion": "Los Secretos de las Ballenas | Damos un respiro a la naturaleza"
+    },
+    {
+      "id": 28,
+      "titulo": "Tiburones ballena visitan la costa mexicana | Misterios de Nuestro Planeta ",
+      "link": "https://www.youtube.com/watch?v=6yt-hLCUhAE",
+      "thumbnail": "https://i.ytimg.com/vi/6yt-hLCUhAE/maxresdefault.jpg",
+      "categoria": "Ballenas",
+      "descripcion": "Tiburones ballena visitan la costa mexicana | Misterios de Nuestro Planeta "
+    },
+    {
+      "id": 29,
+      "titulo": "Mr Beast regala un carro",
+      "link": "https://www.youtube.com/watch?v=s1ax8Tx_Jz0",
+      "thumbnail": "https://i.ytimg.com/vi/r9PeYPHdpNo/maxresdefault.jpg",
+      "categoria": "Tiburones",
+      "descripcion": "Prueba"
+    }
+  ],
+  "categorias": [
+    {
+      "id": 1,
+      "nombre": "Extrañas Criaturas",
+      "texto": "Descubre la vida marina como nunca antes.",
+      "colores": "#ff4400"
+    },
+    {
+      "id": 3,
+      "texto": "Descubre los Arrecifes de Coral como nunca antes",
+      "nombre": "Tiburones",
+      "colores": "#d06fa9"
+    },
+    {
+      "id": 5,
+      "nombre": "Ballenas",
+      "texto": "Sumérgete en la fascinante vida de las criaturas más grandes del planeta.",
+      "colores": "#57a3b2"
+    },
+    {
+      "id": 6,
+      "nombre": "Pulpos",
+      "texto": "Descubre a unos de los animales más inteligentes del lecho marino.",
+      "colores": "#68336c"
+    }
+  ]
+}

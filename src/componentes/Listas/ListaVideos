@@ -1,0 +1,71 @@
+import { buscar } from "../../api/api";
+import { useState, useEffect } from "react";
+import './ListaVideos.css';
+
+
+const ListaVideos = ({ url }) => {
+
+    const [videos, setVideos] = useState([]);
+
+    useEffect(() => {
+        buscar(url, setVideos)
+    }, [url]);
+
+
+    return (
+        <Section>
+          {videos.map((video, id) => (
+            <div className="Carrusel" key={id}>
+              <div className="Flex">
+                <h2 className="H2">Hola</h2>
+              </div>
+              <Slider {...settings}>
+                {video.map((videoItem, id) => (
+                  <div
+                    className="StyleImg"
+                    key={id}
+                    style={{ borderColor: videoItem.categoria.colores }}
+                  >
+                    <img src={videoItem.thumbnail} alt={videoItem.titulo} className="Img" />
+                  </div>
+                ))}
+              </Slider>
+            </div>
+          ))}
+        </Section>
+      );
+      
+
+    // return (
+    //          <Section>
+    //       {categorias.map(categoria => (
+    //             const { titulo, texto, colores} = categorias;
+    //         return 
+    //         <Carrusel key={index}>
+    //         <Flex>
+    //           <H2 style={{ background: categoria.colores }}>{categoria.titulo}</H2>
+    //           <Texto>{categoria.texto}</Texto>
+    //           </Flex>
+    //           <Slider {...settings}>
+    //             {videos
+    //               .filter((video) => video.categoria === categoria.titulo)
+    //               .map((video, index) => (
+    //                <StyleImg key={index} borderColor={categoria.colores}
+    //                > 
+    //                     <Img
+    //                     src={video.thumbnail}
+    //                     alt={video.titulo}
+                        
+    //                     />
+    //                 </StyleImg>
+    //               ))}
+    //           </Slider>
+    //         </Carrusel>
+    //       );
+    //       ))}
+    //     </Section>
+    // );
+
+}
+
+export default ListaVideos;

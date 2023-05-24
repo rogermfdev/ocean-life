@@ -1,40 +1,58 @@
 import { TextField, Box, Button, Stack } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import ListaOpciones from "../../Form/ListaOpciones/index.jsx";
-import { validarTitulo, validarLink, validarLinkImagen, validarText } from "../../Form/NuevoVideo/validaciones.js"
+import { validarTitulo, validarLink, validarLinkImagen, validarText, validarPass } from "../../Form/NuevoVideo/validaciones.js"
+import { guardarDatos } from "../../../api/api"
 
-const Formulario = ({ props }) => {
+const Formulario = () => {
 
-    const [titulo, setTitulo] = useState({ value: "Documental", valid: null });
-    const [link, setLink] = useState({ value: "https://www.youtube.com/watch?v=aZb5ddjmpno", valid: null, })
-    const [imagen, setImagen] = useState({ value: "aaaaaa", valid: null })
-    const [texto, setTexto] = useState({ value: "aaaaa", valid: null })
-    const [cat, setCat] = useState('')
+
+
+    const [titulo, setTitulo] = useState({ value: "", valid: null });
+    const [link, setLink] = useState({ value: "", valid: null, })
+    const [imagen, setImagen] = useState({ value: "", valid: null })
+    const [texto, setTexto] = useState({ value: "", valid: null })
+    const [cat, setCat] = useState("")
+    const [pass, setPass] = useState({ value: "", valid: null })
 
     const resetState = () => {
         setTitulo({ value: "", valid: null });
         setLink({ value: "", valid: null });
         setImagen({ value: "", valid: null });
         setTexto({ value: "", valid: null });
-        setCat({ value: "", valid: null });
+        setCat("");
+        setPass({ value: "", valid: null });
     };
+
 
 
     const handleForm = (e) => {
         e.preventDefault();
         console.log("Manejar el envio")
         let datosAEnviar = {
-            titulo,
-            link,
-            imagen,
-            texto,
-            cat,
-
+            id: null, // El campo "id" se generará automáticamente en el servidor
+            titulo: titulo.value,
+            link: link.value,
+            thumbnail: imagen.value,
+            categoria: cat,
+            descripcion: texto.value,
         }
-        console.log("Los datos: ", datosAEnviar);
-        resetState();
+
+        guardarDatos("/videos", datosAEnviar)
+            .then(() => {
+                console.log("Formulario enviado correctamente");
+                resetState();
+            })
+            .catch((error) => {
+                console.error("Error al enviar el formulario:", error);
+            });
+
     }
+
+
+
+
 
     const handleOnBlur = (event) => {
         const title = event.target.value;
@@ -60,6 +78,12 @@ const Formulario = ({ props }) => {
         setTexto({ value, valid });
     }
 
+    const handleBlurPass = (e) => {
+        const value = e.target.value;
+        const valid = validarPass(value);
+        setPass({ value, valid });
+    }
+
     const handleChange = (input) => {
         const titulo = input.target.value;
         const valido = validarTitulo(titulo)
@@ -73,7 +97,7 @@ const Formulario = ({ props }) => {
             sx={{
                 maxWidth: '100%',
                 display: "flex",
-                alignItems: "center",
+                alignItems: "left",
                 justifyContent: "center",
                 flexDirection: "column",
             }}
@@ -102,7 +126,7 @@ const Formulario = ({ props }) => {
                 margin="dense"
                 type="text"
                 error={link.valid === false}
-                helperText={link.valid === false && "Agrege en enlace de Youtube"}
+                helperText={link.valid === false && "Agrege un enlace de Youtube"}
                 value={link.value}
                 onBlur={handleBlurLink}
                 onChange={(input) => {
@@ -132,7 +156,7 @@ const Formulario = ({ props }) => {
             />
 
             <ListaOpciones
-                categoria={cat}
+                cat={cat}
                 setCat={setCat}
             />
 
@@ -156,13 +180,39 @@ const Formulario = ({ props }) => {
                 onBlur={handleBlurText}
 
             />
+
+
+            <TextField
+                id="outlined-password-input"
+                label="Código de seguridad"
+                type="password"
+                margin="dense"
+                variant="filled"
+                autoComplete="current-password"
+                error={pass.valid === false}
+                helperText={pass.valid === false && "Ingrese el código de seguridad. Si no lo recuerda, pónganse en contacto con el admininistrador."}
+                value={pass.value}
+                onChange={(input) => {
+                    const value = input.target.value;
+                    const valid = validarPass(value);
+                    setPass({ value, valid });
+                }}
+                onBlur={handleBlurPass}
+                required
+            />
+
             <Stack direction="row" spacing={2} margin="dense">
-                <Button variant="contained" type="submit"
+
+                <Button variant="contained" type="submit" margin="dense"
                 >Guardar</Button>
-                <Button variant="outlined" onClick={resetState} >
+                <Button variant="outlined" onClick={resetState} margin="dense">
                     Limpiar</Button>
-                    
-                    <Link  to="/nueva-categoria/"><Button variant="outlined" >Nueva Categoria</Button> </Link>
+
+
+                <Link to="/nueva-categoria/">
+                    <Button variant="outlined" margin="dense" sx={{ display: "flex", justifyContent: "flex-end" }}>Nueva Categoria</Button>
+                </Link>
+
             </Stack >
         </Box>
     )
