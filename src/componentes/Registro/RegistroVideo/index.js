@@ -1,5 +1,5 @@
 import { TextField, Box, Button, Stack } from "@mui/material";
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import ListaOpciones from "../../Form/ListaOpciones/index.jsx";
 import { validarTitulo, validarLink, validarLinkImagen, validarText, validarPass } from "../../Form/NuevoVideo/validaciones.js"

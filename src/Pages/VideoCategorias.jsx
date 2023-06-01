@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { buscar } from '../api/api'
-import './../HomeCarrusel/VideoCard/videocard.css'
+import '../HomeCarrusel/VideoCard/videocard.css'
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 

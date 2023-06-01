@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { buscar } from '../api/api';
-import './../HomeCarrusel/VideoCard/videocard.css'
+import '../HomeCarrusel/VideoCard/videocard.css'
 import obtenerId from "../HomeCarrusel/VideoCard/ObtenerID.js"
 
 const VideoPost = ({ url }) => {
@@ -21,7 +21,7 @@ const VideoPost = ({ url }) => {
         <div className='content'>
     
           <div className="container">
-            {video.link && <iframe className="responsive-iframe" src={videoUrl} allowFullScreen />}
+            {video.link && <iframe className="responsive-iframe" src={videoUrl} allowFullScreen title="video documental"/>}
           </div>
           <h1 className='blanco'>{video.titulo}</h1>
           <p className='blanco'>{video.descripcion}</p>

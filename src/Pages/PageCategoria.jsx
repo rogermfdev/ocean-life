@@ -3,13 +3,9 @@ import { Box } from "@mui/system"
 import TablaCategoria from "../componentes/TablaCategoria";
 import { useState } from "react";
 
-
-
 const PageCategoria = () => {
 
     const [tablaActualizada, setTablaActualizada] = useState(false);
-
-    
 
     const handleActualizarTabla = () => {
         setTablaActualizada(!tablaActualizada);
@@ -30,7 +26,6 @@ const PageCategoria = () => {
 
         </main>
     )
-
 }
 
 export default PageCategoria;

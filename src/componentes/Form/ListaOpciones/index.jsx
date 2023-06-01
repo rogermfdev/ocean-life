@@ -1,4 +1,4 @@
-import { Select, FormControl, InputLabel, MenuItem, FormHelperText } from "@mui/material"
+import { Select, FormControl, InputLabel, MenuItem } from "@mui/material"
 import { useState, useEffect } from "react";
 import { buscar } from "../../../api/api";
 
@@ -8,7 +8,7 @@ const ListaOpciones = ({cat, setCat}) => {
 
 
     useEffect(() => {
-        buscar("http://localhost:3000/categorias", setCategorias);
+        buscar("/categorias", setCategorias);
     
       }, []);
 
@@ -19,8 +19,6 @@ const ListaOpciones = ({cat, setCat}) => {
         
     }
 
-    
-
     return <FormControl
         variant="filled"
         fullWidth
@@ -30,11 +28,6 @@ const ListaOpciones = ({cat, setCat}) => {
         <Select 
         value={cat} 
         onChange={handleSelect}
-      
-        
-        onBlur={(e)=> {
-            const valor = e.target.value;
-        }}
         >
 
         {/* value={props.value} onChange={handleSelect} */}

@@ -20,9 +20,9 @@ const RegistroCategoria = ({handleActualizarTabla}) => {
         setPass ({ value: "", valid: null });
     };
 
-    useEffect(() =>{
+    useEffect(() => {
         buscar("/categorias", setCategorias)
-    }, [tablaActualizada]);
+    }, [categorias, tablaActualizada]);
 
 
     const handleForm = (e) => {
@@ -52,11 +52,6 @@ const RegistroCategoria = ({handleActualizarTabla}) => {
         e.preventDefault();
         resetState();
     };
-
-    // const handleReset = (e) => {
-    //     e.preventDefault();
-
-    // }
 
     const handleOnBlur = (e) => {
         const value = e.target.value;

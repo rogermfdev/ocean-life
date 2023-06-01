@@ -2,83 +2,83 @@
   "videos": [
     {
       "id": 1,
-      "titulo": "Título del video 1",
+      "titulo": "Vida marina",
       "link": "https://www.youtube.com/watch?v=J2UK7kRNRmY",
       "thumbnail": "https://i.ytimg.com/vi/J2UK7kRNRmY/maxresdefault.jpg",
       "categoria": "Extrañas Criaturas",
-      "descripcion": "Descripción del video 1"
+      "descripcion": "La vida marina como nunca la habías visto antes."
     },
     {
       "id": 3,
-      "titulo": "Título del video 3",
+      "titulo": "Nuestro Planeta",
       "link": "https://www.youtube.com/watch?v=r9PeYPHdpNo",
       "thumbnail": "https://i.ytimg.com/vi/r9PeYPHdpNo/maxresdefault.jpg",
       "categoria": "Extrañas Criaturas",
-      "descripcion": "Descripción del video 3"
+      "descripcion": "Sumérgete y conoce las maravillas que esconde nuestro planeta."
     },
     {
       "id": 4,
-      "titulo": "Título del video 4",
+      "titulo": "Explorando océano profundo",
       "link": "https://www.youtube.com/watch?v=9FqwhW0B3tY",
       "thumbnail": "https://i.ytimg.com/vi/9FqwhW0B3tY/maxresdefault.jpg",
       "categoria": "Extrañas Criaturas",
-      "descripcion": "Descripción del video 4"
+      "descripcion": "El océano marino esconde animales extremadamente raros"
     },
     {
       "id": 5,
-      "titulo": "Título del video 5",
+      "titulo": "Titanes de los Mares: Explorando a los Gigantes Marinos",
       "link": "https://www.youtube.com/watch?v=FmR14Yng9kI",
       "thumbnail": "https://i.ytimg.com/vi/FmR14Yng9kI/maxresdefault.jpg",
       "categoria": "Extrañas Criaturas",
-      "descripcion": "Descripción del video 5"
+      "descripcion": "Sumérgete en las profundidades oceánicas y descubre la majestuosidad de los gigantes marinos que habitan en nuestros mares."
     },
     {
       "id": 6,
-      "titulo": "Título del video 6",
+      "titulo": "Criatura alienígena",
       "link": "https://www.youtube.com/watch?v=aZb5ddjmpno",
       "thumbnail": "https://i.ytimg.com/vi/aZb5ddjmpno/maxresdefault.jpg",
       "categoria": "Extrañas Criaturas",
-      "descripcion": "Descripción del video 6"
+      "descripcion": "Una extraña criatura alienígena que vive en los mares."
     },
     {
       "id": 7,
-      "titulo": "Título del video 7",
+      "titulo": "Mentes Asesinas: La Inteligencia de los Tiburones",
       "link": "https://www.youtube.com/watch?v=qb8ulwUBRBA",
       "thumbnail": "https://i.ytimg.com/vi/qb8ulwUBRBA/maxresdefault.jpg",
       "categoria": "Tiburones",
-      "descripcion": "Descripción del video 7"
+      "descripcion": "Descubre la sorprendente inteligencia y capacidad de los tiburones para adaptarse y sobrevivir en los océanos, desafiando los estereotipos y revelando su fascinante comportamiento."
     },
     {
       "id": 8,
-      "titulo": "Título del video 8",
+      "titulo": "El Rugido de las Profundidades: Tiburones en Acción",
       "link": "https://www.youtube.com/watch?v=wV49x5M2TKg",
       "thumbnail": "https://i.ytimg.com/vi/wV49x5M2TKg/maxresdefault.jpg",
       "categoria": "Tiburones",
-      "descripcion": "Descripción del video 8"
+      "descripcion": "Adéntrate en el mundo salvaje de los tiburones y presencia de cerca su poderío y agilidad mientras cazan, se alimentan y demuestran sus habilidades de supervivencia en los océanos."
     },
     {
       "id": 9,
-      "titulo": "Título del video 9",
+      "titulo": "Guardianes de los Mares: Tiburones y su Rol Ecológico",
       "link": "https://www.youtube.com/watch?v=34L1i_lmKmo",
       "thumbnail": "https://i.ytimg.com/vi/34L1i_lmKmo/maxresdefault.jpg",
       "categoria": "Tiburones",
-      "descripcion": "Descripción del video 8"
+      "descripcion": "Explora el papel crucial de los tiburones en los ecosistemas marinos y cómo su desaparición podría afectar a toda la cadena alimentaria y al equilibrio de los océanos."
     },
     {
       "id": 10,
-      "titulo": "Título del video 10",
+      "titulo": "Tiburones Extremos: Los Depredadores más Peligrosos",
       "link": "https://www.youtube.com/watch?v=Oza3DOAR2gg",
       "thumbnail": "https://i.ytimg.com/vi/Oza3DOAR2gg/maxresdefault.jpg",
       "categoria": "Tiburones",
-      "descripcion": "Descripción del video 8"
+      "descripcion": "Descubre los tiburones más temidos y peligrosos del mundo, desde el temible tiburón blanco hasta el feroz tiburón tigre, y explora su reputación como depredadores implacables."
     },
     {
       "id": 11,
-      "titulo": "Título del video 11",
+      "titulo": "Secretos de las Profundidades: La Vida Oculta de los Tiburones",
       "link": "https://www.youtube.com/watch?v=IgMWsyhKr-Q",
       "thumbnail": "https://i.ytimg.com/vi/IgMWsyhKr-Q/maxresdefault.jpg",
       "categoria": "Tiburones",
-      "descripcion": "Descripción del video 8"
+      "descripcion": "Sumérgete en el mundo desconocido y enigmático de los tiburones, revelando sus hábitos de reproducción, migración y comportamiento poco conocidos que los convierten en seres fascinantes."
     },
     {
       "id": 12,
@@ -139,40 +139,40 @@
     {
       "id": 19,
       "titulo": "Pulpo curioso documental",
-      "link": "https://www.youtube.com/watch?v=abRPaXgJGQg",
-      "thumbnail": "https://i.ytimg.com/vi/abRPaXgJGQg/maxresdefault.jpg",
+      "link": "https://www.youtube.com/watch?v=CTseFqy_DJg",
+      "thumbnail": "https://i.ytimg.com/vi/CTseFqy_DJg/maxresdefault.jpg",
       "categoria": "Pulpos",
       "descripcion": "Pulpo curioso documental"
     },
     {
       "id": 21,
       "titulo": "Pulpos documentales",
-      "link": "https://www.youtube.com/watch?v=abRPaXgJGQg",
-      "thumbnail": "https://i.ytimg.com/vi/abRPaXgJGQg/maxresdefault.jpg",
+      "link": "https://www.youtube.com/watch?v=oSyEZAm8nb8",
+      "thumbnail": "https://i.ytimg.com/vi/oSyEZAm8nb8/maxresdefault.jpg",
       "categoria": "Pulpos",
       "descripcion": "Pulpos documentales"
     },
     {
       "id": 22,
-      "titulo": "Pulpos documentales",
-      "link": "https://www.youtube.com/watch?v=abRPaXgJGQg",
-      "thumbnail": "https://i.ytimg.com/vi/abRPaXgJGQg/maxresdefault.jpg",
+      "titulo": "El calamar gigante - MONSTRUOS LEGENDARIOS",
+      "link": "https://www.youtube.com/watch?v=MII1PNTCa5Q",
+      "thumbnail": "https://i.ytimg.com/vi/MII1PNTCa5Q/maxresdefault.jpg",
       "categoria": "Pulpos",
-      "descripcion": "Pulpos documentales"
+      "descripcion": "En las aguas del mar de cortes, denominado “El acuario del mundo” es dominando por una extraña criatura, un calamar asesino, el calamar de Humboldt. "
     },
     {
       "id": 23,
-      "titulo": "Pulpos documentales",
-      "link": "https://www.youtube.com/watch?v=abRPaXgJGQg",
-      "thumbnail": "https://i.ytimg.com/vi/abRPaXgJGQg/maxresdefault.jpg",
+      "titulo": "La sepia y el pulpo: dos cefalópodos fascinantes | National Geographic España",
+      "link": "https://www.youtube.com/watch?v=QwUnM2sTy7s",
+      "thumbnail": "https://i.ytimg.com/vi/QwUnM2sTy7s/maxresdefault.jpg",
       "categoria": "Pulpos",
-      "descripcion": "Pulpos documentales"
+      "descripcion": "Ambos cefalópados tienen un pico óseo que puede destrozar hasta los crustáceos más resistentes."
     },
     {
       "id": 24,
-      "titulo": "Pulpos documentales",
-      "link": "https://www.youtube.com/watch?v=abRPaXgJGQg",
-      "thumbnail": "https://i.ytimg.com/vi/abRPaXgJGQg/maxresdefault.jpg",
+      "titulo": "Lucha titánica entre un pulpo y un tiburón Alitán | Planeta Azul II | Discovery Latinoamérica",
+      "link": "https://www.youtube.com/watch?v=uYU8VP3aoes",
+      "thumbnail": "https://i.ytimg.com/vi/uYU8VP3aoes/maxresdefault.jpg",
       "categoria": "Pulpos",
       "descripcion": "Pulpos documentales"
     },
@@ -207,27 +207,13 @@
       "thumbnail": "https://i.ytimg.com/vi/6yt-hLCUhAE/maxresdefault.jpg",
       "categoria": "Ballenas",
       "descripcion": "Tiburones ballena visitan la costa mexicana | Misterios de Nuestro Planeta "
-    },
-    {
-      "id": 29,
-      "titulo": "Mr Beast regala un carro",
-      "link": "https://www.youtube.com/watch?v=s1ax8Tx_Jz0",
-      "thumbnail": "https://i.ytimg.com/vi/r9PeYPHdpNo/maxresdefault.jpg",
-      "categoria": "Tiburones",
-      "descripcion": "Prueba"
     }
   ],
   "categorias": [
     {
-      "id": 1,
-      "nombre": "Extrañas Criaturas",
-      "texto": "Descubre la vida marina como nunca antes.",
-      "colores": "#ff4400"
-    },
-    {
       "id": 3,
-      "texto": "Descubre los Arrecifes de Coral como nunca antes",
       "nombre": "Tiburones",
+      "texto": "Descubre los Arrecifes de Coral como nunca antes.",
       "colores": "#d06fa9"
     },
     {
@@ -239,8 +225,14 @@
     {
       "id": 6,
       "nombre": "Pulpos",
-      "texto": "Descubre a unos de los animales más inteligentes del lecho marino.",
-      "colores": "#68336c"
+      "texto": "Descubre las maravillas de los pulpos.",
+      "colores": "#8e2aa2"
+    },
+    {
+      "id": 7,
+      "nombre": "Extrañas Criaturas",
+      "texto": "Las extrañas criaturas que pueblan los oceános",
+      "colores": "#d51010"
     }
   ]
 }

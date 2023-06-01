@@ -1,14 +1,5 @@
 import styled from "styled-components";
 import {blanco} from "../../UI/variablesCSS.jsx";
-import Button from '@mui/material/Button';
-// import DeleteIcon from '@mui/icons-material/Delete';
-// import SendIcon from '@mui/icons-material/Send';
-import Stack from '@mui/material/Stack';
-
-
-
-
-
 
 export const Boton = styled.button`
     margin: 1em;
@@ -33,24 +24,3 @@ border: none;
 export const BtnCat = styled(BtnHero)`
     font-size: 1.2em;
 `
-
-
-
-
-// export function IconLabelButtons() {
-//     return (
-//       <Stack direction="row" spacing={2}>
-//         <Button variant="outlined" >
-//           Limpiar
-//         </Button>
-//         <Button variant="contained" >
-//           Enviar
-//         </Button>
-//       </Stack>
-//     );
-//   }
-
-
-
-
-
