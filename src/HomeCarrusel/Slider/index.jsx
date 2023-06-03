@@ -44,8 +44,8 @@ const SimpleSlider = () => {
 
 
     useEffect(() => {
-        buscar("/categorias", setCategorias);
-        buscar("/videos", setVideos);
+        buscar("/categorias/", setCategorias);
+        buscar("/videos/", setVideos);
       }, []);
 
   

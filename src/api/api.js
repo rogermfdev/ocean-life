@@ -1,13 +1,15 @@
 import axios from "axios"
 
 export const api = axios.create({
-    baseURL:"http://localhost:5000/"
+    baseURL:"https://my-json-server.typicode.com/rogermfdev/json-server"
 })
 
+
+
 export const buscar = async (url, setData) =>{
-    const respuestaCategorias = await api.get(url)
-    setData(respuestaCategorias.data)
-}
+  const respuestaCategorias = await api.get(url);
+  setData(respuestaCategorias.data);
+};
 
 export const guardarDatos = async (ruta, datos) => {
     try {
