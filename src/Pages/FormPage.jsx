@@ -9,7 +9,7 @@ const FormPage = () => {
 
             <Box
                 sx={{
-                    width: "900px",
+                    maxWidth: 900,
                     padding: "40px",
                     margin: "0 auto",
                     height: "700px",

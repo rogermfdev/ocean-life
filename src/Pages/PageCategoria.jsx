@@ -15,7 +15,7 @@ const PageCategoria = () => {
         <main>
             <Box
                 sx={{
-                    width: "900px",
+                    maxWidth: 900,
                     padding: "40px",
                     margin: "30px auto",
                 }}

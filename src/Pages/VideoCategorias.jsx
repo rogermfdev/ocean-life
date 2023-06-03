@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 const Section = styled.section`
-    width: 900px;
+    max-width: 900px;
     margin: 30px auto;
 `
 
