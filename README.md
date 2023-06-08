@@ -17,8 +17,6 @@
 </ul>
 <h2>Capturas de pantalla</h2>
 
-
-
 <img src="./public/ocean-life.png" alt="Ocean Life" title="Ocean life">
 
 
