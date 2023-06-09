@@ -2,6 +2,8 @@ import styled from "styled-components"
 import React, { useState, useEffect } from "react";
 import { buscar, borrarDatos } from "../../api/api";
 import { Link } from "react-router-dom";
+import EditIcon from '@mui/icons-material/Edit';
+import DeleteOutlinedIcon from '@mui/icons-material/DeleteOutlined';
 
 
 const StyledTable = styled.table`
@@ -35,6 +37,11 @@ const StyledTable = styled.table`
       background-color: #535151;
     }
   }
+
+  thead {
+    height: 50px;
+  }
+
   thead > tr {
   }
   caption {
@@ -111,8 +118,8 @@ const TablaCategoria = ({ tablaActualizada, setTablaActualizada }) => {
 
           <td>{categoria.nombre}</td>
           <td>{categoria.texto}</td>
-          <td><Link to={`/editar-categoria/${categoria.id}`}>Editar</Link></td>
-          <td><a href="#" onClick={() => handleBorrarCategoria(categoria.id)}>Remover</a></td>
+          <td><Link to={`/editar-categoria/${categoria.id}`}><EditIcon /></Link></td>
+          <td><a href="#" onClick={() => handleBorrarCategoria(categoria.id)}><DeleteOutlinedIcon /> </a></td>
         </tr>
       ))}
     </tbody>

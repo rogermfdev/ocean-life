@@ -5,6 +5,7 @@ import { actualizarDatos } from "../../../api/api";
 import { validarPass } from "../../Form/NuevoVideo/validaciones";
 import { useParams } from 'react-router-dom';
 import { buscar } from "../../../api/api";
+import { toast } from "react-toastify";
 
 
 const ActualizandoCategoria = () => {
@@ -55,12 +56,30 @@ const ActualizandoCategoria = () => {
         }
         console.log(datosEnviados)
         actualizarDatos(`/categorias/${id}`, datosEnviados)
-        .then(() => {
-                console.log("Formulario enviado correctamente");
+            .then(() => {
+                toast.success('Guardado exitosamente', {
+                    position: "top-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "dark",
+                });
                 resetState();
             })
             .catch((error) => {
-                console.error("Error al enviar el formulario:", error);
+                toast.error('Ocurrió un error', {
+                    position: "top-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "dark",
+                    });
             });
     }
 

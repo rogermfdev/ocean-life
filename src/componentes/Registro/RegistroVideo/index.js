@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import ListaOpciones from "../../Form/ListaOpciones/index.jsx";
 import { validarTitulo, validarLink, validarLinkImagen, validarText, validarPass } from "../../Form/NuevoVideo/validaciones.js"
 import { guardarDatos } from "../../../api/api"
+import { toast } from "react-toastify";
 
 const Formulario = () => {
 
@@ -41,11 +42,29 @@ const Formulario = () => {
 
         guardarDatos("/videos", datosAEnviar)
             .then(() => {
-                console.log("Formulario enviado correctamente");
+                toast.success('Subido exitosamente', {
+                    position: "top-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "dark",
+                    });
                 resetState();
             })
             .catch((error) => {
-                console.error("Error al enviar el formulario:", error);
+                toast.error('Ocurrió un error', {
+                    position: "top-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "dark",
+                    });
             });
 
     }

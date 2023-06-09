@@ -3,6 +3,7 @@ import { Box, TextField, Button, Stack } from "@mui/material";
 import { validarText } from "../../Form/NuevoVideo/validaciones";
 import { buscar, guardarDatos } from "../../../api/api"
 import { validarPass } from "../../Form/NuevoVideo/validaciones";
+import { toast } from "react-toastify";
 
 const RegistroCategoria = ({handleActualizarTabla}) => {
 
@@ -37,13 +38,31 @@ const RegistroCategoria = ({handleActualizarTabla}) => {
         console.log(datosEnviados)
         guardarDatos("/categorias", datosEnviados)
             .then(() => {
-                console.log("Formulario enviado correctamente");
+                toast.success('Guardado exitosamente', {
+                    position: "top-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "dark",
+                });
                 resetState();
                 setTablaActualizada(true);
                 handleActualizarTabla();
             })
             .catch((error) => {
-                console.error("Error al enviar el formulario:", error);
+                toast.error('Ocurrió un error', {
+                    position: "top-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "dark",
+                    });
             });
 
     }
